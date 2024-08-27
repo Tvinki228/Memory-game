@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="code.js"></script>
+        <title>Memory game</title>
+    </head>
+    <body>
+        <header>
+            <h1>Memory <span class="capybara"> game</span></h1>
+        </header>
+        <p class="rules-title">Rules:</p>
+        <p class="rules-text">
+            In the Memory Game, the objective is to find and match all pairs of
+            identical cards. The game begins by shuffling the deck and laying
+            all the cards face down in a grid. Players take turns flipping over
+            two cards. If the cards match, the player keeps the pair and takes
+            another turn. If the cards don't match, they are flipped back over,
+            and the next player takes their turn. The game continues until all
+            pairs have been matched. The player with the most pairs at the end
+            of the game wins. If players have an equal number of pairs, the game
+            ends in a tie.
+        </p>
+        <main>
+            <div class="game-board">
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-inner">
+                            <img
+                                class="first-image"
+                                src="images/backSide.png"
+                                alt=""
+                            />
+                            <img
+                                class="second-image"
+                                src="images/dog-png-30.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <img
+                                class="first-image"
+                                src="images/backSide.png"
+                                alt=""
+                            />
+                            <img
+                                class="second-image"
+                                src="images/dog-png-30.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <img
+                                class="first-image"
+                                src="images/backSide.png"
+                                alt=""
+                            />
+                            <img
+                                class="second-image"
+                                src="images/yellowCat.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <img
+                                class="first-image"
+                                src="images/backSide.png"
+                                alt=""
+                            />
+                            <img
+                                class="second-image"
+                                src="images/yellowCat.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <img
+                                class="first-image"
+                                src="images/backSide.png"
+                                alt=""
+                            />
+                            <img
+                                class="second-image"
+                                src="images/Brown_Horse_PNG_Clipart-1046.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <img
+                                class="first-image"
+                                src="images/backSide.png"
+                                alt=""
+                            />
+                            <img
+                                class="second-image"
+                                src="images/Brown_Horse_PNG_Clipart-1046.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <img
+                                class="first-image"
+                                src="images/backSide.png"
+                                alt=""
+                            />
+                            <img
+                                class="second-image"
+                                src="images/pngtree-alligator-crocodile-isolated-png-image_10010816.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <img
+                                class="first-image"
+                                src="images/backSide.png"
+                                alt=""
+                            />
+                            <img
+                                class="second-image"
+                                src="images/pngtree-alligator-crocodile-isolated-png-image_10010816.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <img
+                                class="first-image"
+                                src="images/backSide.png"
+                                alt=""
+                            />
+                            <img
+                                class="second-image"
+                                src="images/pngtree-the-happy-quokka-is-walking-and-holding-the-carrot-with-the-png-image_12214974.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <img
+                                class="first-image"
+                                src="images/backSide.png"
+                                alt=""
+                            />
+                            <img
+                                class="second-image"
+                                src="images/pngtree-the-happy-quokka-is-walking-and-holding-the-carrot-with-the-png-image_12214974.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <img
+                                class="first-image"
+                                src="images/backSide.png"
+                                alt=""
+                            />
+                            <img
+                                class="second-image"
+                                src="images/bat-flying-with-ai-generated-free-png.webp"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <img
+                                class="first-image"
+                                src="images/backSide.png"
+                                alt=""
+                            />
+                            <img
+                                class="second-image"
+                                src="images/bat-flying-with-ai-generated-free-png.webp"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <img
+                                class="first-image"
+                                src="images/backSide.png"
+                                alt=""
+                            />
+                            <img
+                                class="second-image"
+                                src="images/Capybara-PNG-Image.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <img
+                                class="first-image"
+                                src="images/backSide.png"
+                                alt=""
+                            />
+                            <img
+                                class="second-image"
+                                src="images/Capybara-PNG-Image.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <img
+                                class="first-image"
+                                src="images/backSide.png"
+                                alt=""
+                            />
+                            <img
+                                class="second-image"
+                                src="images/axolotl-tank-bundle-fish4kids-axolotl-png-420_460.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <img
+                                class="first-image"
+                                src="images/backSide.png"
+                                alt=""
+                            />
+                            <img
+                                class="second-image"
+                                src="images/axolotl-tank-bundle-fish4kids-axolotl-png-420_460.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <img
+                                class="first-image"
+                                src="images/backSide.png"
+                                alt=""
+                            />
+                            <img
+                                class="second-image"
+                                src="images/pngtree-duckling-in-studio-isolated-photo-png-image_14312474.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <img
+                                class="first-image"
+                                src="images/backSide.png"
+                                alt=""
+                            />
+                            <img
+                                class="second-image"
+                                src="images/pngtree-duckling-in-studio-isolated-photo-png-image_14312474.png    "
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <img
+                                class="first-image"
+                                src="images/backSide.png"
+                                alt=""
+                            />
+                            <img
+                                class="second-image"
+                                src="images/lemur-wildlife-animal-watercolor-png.webp"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <img
+                                class="first-image"
+                                src="images/backSide.png"
+                                alt=""
+                            />
+                            <img
+                                class="second-image"
+                                src="images/lemur-wildlife-animal-watercolor-png.webp"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="scoreboard">Player 1: 0 - Player 2: 0</div>
+            <div class="audio-wrapper">
+                <audio
+                    id="background-music"
+                    src="naturebirdscrickets_bw_1500.mp3"
+                    loop
+                >
+                    Your browser does not support the audio element.
+                </audio>
+                <p>Music:</p>
+                <button id="toggle-music">Mute</button>
+            </div>
+        </footer>
+    </body>
+</html>
